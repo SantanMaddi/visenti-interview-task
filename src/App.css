@@ -2,13 +2,19 @@
   text-align: center;
 }
 
+.App *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #2996cc;
   height: 150px;
   padding: 20px;
   color: white;
@@ -17,6 +23,31 @@
 .App-intro {
   font-size: large;
 }
+.graph-section{
+  display: block;
+  text-align: center;
+
+}
+.graph-cont{
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  height: calc(90vh - 190px);
+  padding: 40px 0;
+}
+
+.dygraph-legend{
+  position: absolute;
+
+
+  top: 105% !important;
+  left: 50% !important;
+  width: 60% !important;
+  text-align: center !important;
+  transform: translateX(-50%);
+
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
